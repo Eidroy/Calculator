@@ -1,0 +1,78 @@
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e0e0e0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-gap: 6px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.display {
+  font-size: 28px;
+  border: none;
+  outline: none;
+  text-align: right;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  grid-row: 1;
+  grid-column: span 4;
+}
+
+.button {
+  cursor: pointer;
+  text-align: center;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #f5f5f5;
+}
+
+.number {
+  border: 0px;
+  border-radius: 8px;
+  background-color: #f1f3f4;
+}
+
+.number:hover {
+  background-color: #00000011;
+}
+
+.operator,
+.clear,
+.equals {
+  border: 0px;
+  border-radius: 8px;
+  background-color: #dadce0;
+  color: #333;
+}
+
+.operator:hover,
+.clear:hover {
+  background-color: #dee0e3;
+}
+
+.equals:hover {
+  background-color: #87ceeb;
+}
+
+.equals {
+  /* height: 56px; */
+  background-color: #4285f4;
+  color: white;
+}
