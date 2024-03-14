@@ -62,7 +62,7 @@ function calculateResult() {
       case "X":
         result = firstValue * secondValue;
         break;
-      case "/n":
+      case "/":
         if (secondValue === 0) {
           result = "Error: Division by zero";
         } else {
